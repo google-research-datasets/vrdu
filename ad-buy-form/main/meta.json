@@ -1,0 +1,35 @@
+{
+  "dataset_name": "DeepForm",
+  "entity_name_to_match_func": {
+    "advertiser": "GeneralStringMatch",
+    "agency": "GeneralStringMatch",
+    "contract_num": "NumericalStringMatch",
+    "flight_from": "DateMatch",
+    "flight_to": "DateMatch",
+    "gross_amount": "PriceMatch",
+    "product": "GeneralStringMatch",
+    "tv_address": "AddressMatch",
+    "property": "GeneralStringMatch",
+    "channel": "GeneralStringMatch",
+    "program_desc": "GeneralStringMatch",
+    "program_start_date": "DateMatch",
+    "program_end_date": "DateMatch",
+    "sub_amount": "PriceMatch"
+  },
+  "entity_appearance_pattern": {
+    "advertiser": "unrepeated",
+    "agency": "unrepeated",
+    "contract_num": "unrepeated",
+    "flight_from": "unrepeated",
+    "flight_to": "unrepeated",
+    "gross_amount": "unrepeated",
+    "product": "unrepeated",
+    "tv_address": "unrepeated",
+    "property": "unrepeated",
+    "channel": "line_item",
+    "program_desc": "line_item",
+    "program_start_date": "line_item",
+    "program_end_date": "line_item",
+    "sub_amount": "line_item"
+  }
+}

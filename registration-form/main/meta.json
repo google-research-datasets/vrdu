@@ -1,0 +1,11 @@
+{
+  "dataset_name": "FARA",
+  "entity_name_to_match_func": {
+    "file_date": "DateMatch",
+    "foreign_principle_name": "NameMatch",
+    "registrant_name": "NameMatch",
+    "registration_num": "NumericalStringMatch",
+    "signer_name": "NameMatch",
+    "signer_title": "GeneralStringMatch"
+  }
+}
