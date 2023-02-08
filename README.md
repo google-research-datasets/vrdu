@@ -20,7 +20,8 @@ For each corpus, we provide:
     download them from the original source websites).
 *   *main/dataset.jsonl*: the OCR output corresponding to each PDF, and
     structured annotations for each document obtained by asking human annotators
-    to draw a bounding box around each specified field of interest.
+    to draw a bounding box around each specified field of interest. It needs to
+    be decompressed first with `gzip -d main/dataset.jsonl.gz`.
 *   *main/meta.json*: mapping from the entity names in each corpus to a
     type-specific match function (eg. DateMatch, NumericalMatch, PriceMatch,
     etc.) used to compare predictions with the ground truth.
